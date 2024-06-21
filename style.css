@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    
+    text-decoration: none;
+    
+}
+
+:root{
+    --med-font : 2rem ; 
+    --h2-font : 2.6rem ; 
+    --h3-font : 25px ; 
+
+    --p-font : 0.9rem ; 
+
+    --text-color : #fff ; 
+    --background-color :rgb(17,24,39); 
+    --primary-color :#ffffff73; 
+    --secondary-color :rgb(232,121,249) ;
+    --other-color :rgb(2,6,23);
+    --color : rgba(13, 16, 30, 0.76);;
+}
+
+body{
+    background-color: var(--background-color);
+    color:var(--text-color);
+}
+
+header{
+    padding:20px 12%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--other-color);
+    width: 100%;
+}
+    
+header .logo{
+    font-size: 25px;
+    color:var(--text-color);
+}
+
+header span{
+    color:var(--secondary-color);
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header .navbar a{
+    margin:0px 15px;
+    color:var(--text-color);
+}
+
+header .navbar .active{
+    color:var(--secondary-color);
+}
+
+header .navbar a:hover{
+    color:var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+section{
+    padding:50px 20%;
+}
+
+.home{
+    text-align: center;
+}
+
+.home h2{
+    font-size: var(--h2-font);
+    margin-bottom: 20px;
+   
+
+}
+
+.home p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height:1.5;
+    color:var(--primary-color);
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.footer{
+    padding:25px 12%;
+    background-color: var(--other-color);
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+}
+
+.footer .icons i{
+    margin:0px 20px;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer .icons i:hover{
+    color:var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.team{
+    padding:10px 12%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap:2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card{
+    padding:20px 50px;
+    background-color: var(--color);
+    border-radius: 20px;
+    
+}
+
+.card h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    
+}
+.card ul{
+    text-align: left;    
+}
+
+/*Resources.html */
+
+.resources{
+    padding:20px 12%;
+    
+}
+
+.resources h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: var(--h2-font);
+    color:var(--secondary-color);
+
+}
+
+.resources h2{
+    font-size: var(--med-font);
+    margin-bottom: 30px;
+}
+
+.roadmaps{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap:2rem;
+    margin-bottom: 40px;
+}
+
+.roadmaps .map{
+    background-color: var(--color);
+    padding:20px 30px 30px 30px;
+    border-radius: 20px;
+}
+
+.map .map-header{
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+.map .map-header{
+    font-size: var(--h3-font);
+}
+
+.roadmaps .map-text p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 1.8;
+
+}
+
+.website-problems{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap:2rem;
+    margin-bottom: 50px;
+    
+}
+
+.web-prob{
+    background-color: var(--color);
+    padding:20px 30px 30px 30px;
+    border-radius: 20px;
+}
+
+.web-prob h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.web-prob .c{
+    margin-bottom: 25px;
+
+}
+
+.web-prob .c p{
+    font-size: var(--p-font);
+    font-weight: 400;
+}
+
+.web-prob .c a{
+    font-size: 18px;
+}
+
+
+/*workshops.html*/
+
+
+.workshop-main-heading{
+    padding:30px 12%;
+    text-align: center;
+    font-size: var(--h3-font);
+    color:var(--secondary-color)
+}
+
+.workshop{
+    padding:20px 12%;
+}
+
+.workshop .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap:2rem;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+
+.workshop .cards .cards-img img{
+    width: 100%;
+    height:auto;
+    border-radius: 20px;
+}
+
+.workshop .cards h3{
+    font-size: var(--h3-font);
+}
+
+.workshop .cards .cards-text p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 1.8;
+    margin:25px 0px;
+}
+
+.timings{
+    margin-bottom: 20px;
+}
+
+.cards-text a{
+    color:var(--secondary-color);
+    font-size: 20px;
+}
+
+
+@media (max-width:715px)
+{
+    section {
+        padding:25px 12%;
+    }
+    header .navbar{
+        display :none;
+    }
+}
+
+@media (max-width:980px){
+    .home{
+        padding:30px 12%;
+    }
+}
+
+@media (max-width:450px)
+{
+    .footer .icons i{
+        margin:0px 10px;
+    }
+}
